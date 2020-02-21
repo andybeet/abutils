@@ -8,7 +8,7 @@
 #'
 #' @return Character vector. Names of the files that contain the text
 #'
-#' @example
+#' @examples
 #' \dontrun{
 #' #search all R files in the project root for the string "parameter"
 #' find_text_string("parameter", here::here(),"R")
@@ -20,21 +20,24 @@
 #'
 #' @export
 
-find_textstring <- function(textSnippet,folder,fileType){
-  # read yml file
+find_textstring <- function(textSnippet,folder,fileType) {
+
+  # find files
   filenames <- list.files(folder,pattern=paste0("\\.",fileType))
 
   options(warn=-1)
-  # loop over each rmd file
+  foundFiles <- vector(mode="character",length=0L)
+
+  # loop over each file
   for (afile in filenames) {
-    # read in rmd
+    # read in file content
     fileContent <- readLines(paste0(folder,"/",afile))
 
     lineFound <- fileContent[grepl(textSnippet,fileContent)]
     if (length(lineFound) == 0) next
 
-    print(afile)
-
+    foundFiles = c(foundFiles,afile)
   }
+  return(foundFiles)
 
 }
