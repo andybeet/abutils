@@ -23,7 +23,7 @@
 find_textstring <- function(textSnippet,folder,fileType) {
 
   # find files
-  filenames <- list.files(folder,pattern=paste0("\\.",fileType))
+  filenames <- list.files(folder,pattern=paste0("\\.",tolower(fileType)))
 
   options(warn=-1)
   foundFiles <- vector(mode="character",length=0L)
