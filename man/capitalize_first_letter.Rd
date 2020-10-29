@@ -7,11 +7,11 @@
 capitalize_first_letter(phrase)
 }
 \arguments{
-\item{phrase}{Character string. Any string of characters}
+\item{phrase}{Vector of Character string. Any string of characters}
 }
 \value{
-string
+Vector of strings
 }
 \description{
-Convert a string to lower case except first letter of the first word
+Convert a string to lower case except first letter of the first word.
 }
