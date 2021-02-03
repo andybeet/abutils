@@ -3,7 +3,7 @@
 
 <!-- badges: start -->
 
-![gitleaks](https://github.com/NOAA-EDAB/utilities/workflows/gitleaks/badge.svg)
+![gitleaks](https://github.com/andybeet/utilities/workflows/gitleaks/badge.svg)
 
 <!-- badges: end -->
 
