@@ -1,4 +1,4 @@
-Package: utilities
+Package: abutils
 Title: Functions used frequently to help with everyday tasks
 Version: 0.0.0.9000
 Authors@R: 
