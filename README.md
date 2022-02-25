@@ -7,12 +7,12 @@
 
 <!-- badges: end -->
 
-Utility function for everyday use
+Utility functions for everyday use
 
 ## Installation
 
 ``` r
-remotes::install.packages("andybeet/utilities")
+remotes::install.packages("andybeet/abutils")
 ```
 
 ## Contact
